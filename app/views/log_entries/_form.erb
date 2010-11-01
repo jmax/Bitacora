@@ -1,0 +1,10 @@
+<%= form_for @log_entry, :remote => true do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.text_area :description %>
+  </div>
+
+  <%= f.submit 'Post this entry!' %>
+<% end -%>
+

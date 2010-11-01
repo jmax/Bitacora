@@ -49,3 +49,24 @@ h1.logo {
       color: #ffffff;
     }
 
+
+h3.updater {
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: -3px;
+  line-height: 1.2em;
+  color: #9799D1;
+}
+
+#new-log-entry-box {
+  background-color: #BFD8F8;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+  #new-log-entry-box form .field textarea {
+    border: none;
+    width: 910px;
+    height: 200px;
+  }
+

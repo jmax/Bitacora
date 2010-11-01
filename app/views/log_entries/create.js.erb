@@ -1,0 +1,9 @@
+<% if @success -%>
+  $("#log-entries").html("<%= escape_javascript( render(@log_entries) ) %>");
+  $("#log_entry_description").val("");
+<% else -%>
+  $("#new-log-entry-box").html(
+    "<%= escape_javascript( render(:partial => 'log_entries/form') ) %>"
+  );
+<% end -%>
+

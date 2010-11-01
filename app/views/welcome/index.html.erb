@@ -1,9 +1,10 @@
-<div id="welcome">
-  <h2>
-    Are you tired of forgeting important things?
-    Are you tired of loosing time trying to find that note needed this morning?
-    If so, this is your application.
-    <em>Welcome to Bitacora!</em>
-  </h2>
-</div>
+<% if user_signed_in? -%>
+  <h3 class="updater">Update your bitacora <em>/</em></h3>
+  <div id="new-log-entry-box">
+    <%= render :partial => 'log_entries/form' %>
+  </div>
+  <%= render :partial => 'log_entries/list' %>
+<% else -%>
+  <%= render :partial => 'welcome_message' %>
+<% end -%>
 

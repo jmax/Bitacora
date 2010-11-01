@@ -1,0 +1,14 @@
+<% unless log_entry.new_record? -%>
+  <li id="item-<%= log_entry.id %>" class="item row">
+    <div class="three columns">
+      <%= log_entry.created_at.strftime("%B %d, %Y") %>
+    </div>
+    <div class="nine columns">
+      <%= log_entry.description %>
+    </div>
+    <div class="four columns">
+       actions
+    </div>
+  </li>
+<% end -%>
+
