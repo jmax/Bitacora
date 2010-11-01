@@ -8,9 +8,6 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
     <!-- .wrapper -->
     <div class="wrapper">
       <!-- .container -->
@@ -21,16 +18,19 @@
           </div>
 
           <div class="twelve columns session">
-            <div class="logged-in-user">
-              Welcome,
-              <span class="username">dude</span>!
-              <span class="divider"> | </span>
-              <a href="#">update your profile</a>
-              <span class="divider"> | </span>
-              <a href="#">logout</a>
-            </div>
+            <% if user_signed_in? -%>
+              <%= render :partial => 'shared/logged_in_user' %>
+            <% else -%>
+              <%= render :partial => 'shared/unlogged_in_user' %>
+            <% end -%>
           </div>
         </div>
+
+        <div class="flashes">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+        </div>
+
         <%= yield %>
         <!-- .footer -->
         <div class="footer">

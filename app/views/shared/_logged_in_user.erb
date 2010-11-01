@@ -1,0 +1,11 @@
+<div class="logged-in-user">
+  Welcome,
+  <span class="username">
+    <%= current_user.email %>!
+  </span>
+  <span class="divider"> | </span>
+  <%= link_to 'Update your profile', edit_user_registration_path %>
+  <span class="divider"> | </span>
+  <%= link_to 'Logout', destroy_user_session_path %>
+</div>
+
