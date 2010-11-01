@@ -7,7 +7,8 @@
       <%= log_entry.description %>
     </div>
     <div class="four columns">
-       actions
+       <%= link_to 'Remove', log_entry, :method => :delete,
+             :confirm => "Are you sure?", :remote => true %>
     </div>
   </li>
 <% end -%>
