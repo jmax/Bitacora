@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Bitacora</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+  <head>
+    <title>Bitacora</title>
+    <%= stylesheet_link_tag    "reset", "grid", "base" %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
 
-<%= yield %>
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
-</body>
+    <!-- .wrapper -->
+    <div class="wrapper">
+      <!-- .container -->
+      <div class="container">
+        <div class="header row">
+          <div class="four columns">
+            <h1 class="logo">Bitacora <em>beta!</em></h1>
+          </div>
+
+          <div class="twelve columns session">
+            <div class="logged-in-user">
+              Welcome,
+              <span class="username">dude</span>!
+              <span class="divider"> | </span>
+              <a href="#">update your profile</a>
+              <span class="divider"> | </span>
+              <a href="#">logout</a>
+            </div>
+          </div>
+        </div>
+        <%= yield %>
+        <!-- .footer -->
+        <div class="footer">
+          2010. Bitacora. All rights reserved.
+        </div><!-- .footer -->
+      </div><!-- .container -->
+    </div><!-- .wrapper -->
+  </body>
 </html>
+

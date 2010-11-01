@@ -1,0 +1,63 @@
+/*	--------------------------------------------------
+Container
+-------------------------------------------------- */
+div#container, div.container { position: relative; width: 940px; margin: 0 auto; padding: 0; }
+
+
+/*	--------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row, .row { margin: 0 0 18px -20px; }
+.column, .columns { float: left; display: inline; margin: 0 0 0 20px; }
+
+.one { width: 40px; }
+.two { width: 100px; }
+.three { width: 160px; }
+.four { width: 220px; }
+.five { width: 280px; }
+.six { width: 340px; }
+.seven { width: 400px; }
+.eight { width: 460px; }
+.nine { width: 520px; }
+.ten { width: 580px; }
+.eleven { width: 640px; }
+.twelve { width: 700px; }
+.thirteen { width: 760px; }
+.fourteen { width: 820px; }
+.fifteen { width: 880px; }
+.sixteen { width: 940px; }
+
+.offset-by-one-half { margin-left: 30px; }
+.offset-by-one { margin-left: 60px; }
+.offset-by-two { margin-left: 120px; }
+.offset-by-three { margin-left: 180px; }
+.offset-by-four { margin-left: 240px; }
+.offset-by-five { margin-left: 300px; }
+.offset-by-six { margin-left: 360px; }
+.offset-by-seven { margin-left: 420px; }
+.offset-by-eight { margin-left: 480px; }
+.offset-by-nine { margin-left: 540px; }
+.offset-by-ten { margin-left: 600px; }
+.offset-by-eleven { margin-left: 660px; }
+.offset-by-twelve { margin-left: 720px; }
+.offset-by-thirteen { margin-left: 780px; }
+.offset-by-fourteen { margin-left: 840px; }
+
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .column-row, * html .row, * html .clearfix { height: 1%; }
+.column-row, .row, .clearfix { display: inline-block; }
+.column-row, .row, .clearfix { display: block; }
+
+/*	IE6 Problems ---------- */
+body.ie .column-row { width: 960px; }
+body.ie .eight .column-row	 { width: 480px; }
+body.ie .nine .column-row	 { width: 540px; }
+body.ie .ten .column-row	 { width: 600px; }
+body.ie .eleven .column-row { width: 660px; }
+body.ie .twelve .column-row	 { width: 720px; }
+body.ie .thirteen .column-row	{ width: 780px; }
+body.ie .fourteen .column-row	{ width: 840px; }
+body.ie .fifteen .column-row	{ width: 900px; }
+body.ie .two-thirds .column-row { width: 500px; }
+

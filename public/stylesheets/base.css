@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  background-color: #ebebeb;
+  color: #333333;
+}
+
+.wrapper { width: 960px; margin: auto; padding: 20px 0px; background-color: #ffffff; }
+.session { text-align: right; }
+.footer  { color: #666666; margin-top: 20px; }
+
+a { color: #666666; }
+a:hover { color: #7AB1F8; }
+
+h1.logo {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  color: #cccccc;
+}
+  h1.logo em {
+    background-color: #7AB1F8;
+    color: #ffffff;
+    padding: 2px 3px;
+  }
+
+.username { color: #7AB1F8; font-weight: bold; }
+
+#welcome {
+  text-align: justify;
+}
+
+  #welcome h2 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    color: #BFD8F8;
+  }
+
+    #welcome h2 em {
+      padding: 1px 4px;
+      background-color: #9799D1;
+      color: #ffffff;
+    }
+
