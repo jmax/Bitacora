@@ -12,6 +12,8 @@ body {
 .session { text-align: right; }
 .footer  { color: #666666; margin-top: 20px; }
 
+.highlight { background-color: #f3e03f; }
+
 a { color: #666666; }
 a:hover { color: #7AB1F8; }
 
