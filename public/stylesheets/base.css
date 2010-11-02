@@ -13,6 +13,12 @@ body {
 .footer  { color: #666666; margin-top: 20px; }
 
 .highlight { background-color: #f3e03f; }
+.blank { background-color: #ffffff; }
+
+.item { margin-left: 0px; }
+.columns { width: 290px; text-align: center; }
+
+.span-1 { width:30px; }
 
 a { color: #666666; }
 a:hover { color: #7AB1F8; }
