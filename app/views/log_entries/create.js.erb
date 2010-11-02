@@ -1,3 +1,5 @@
+if ( $("#errorExplanation").size() > 0 ) { $("#errorExplanation").remove(); }
+
 <% if @success -%>
   $("#log-entries").html("<%= escape_javascript( render(@log_entries) ) %>");
   $("#log_entry_description").val("");
