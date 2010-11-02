@@ -4,13 +4,18 @@ class LogEntriesController < ApplicationController
   def create
     @log_entry = current_user.log_entries.build(params[:log_entry])
     if @success = @log_entry.save
-      @log_entries = current_user.log_entries.most_recent
+      @log_entries = current_user.log_entries.most_recent.pending
     end
   end
 
   def destroy
     @log_entry = current_user.log_entries.find(params[:id])
     @log_entry.destroy
+  end
+
+  def complete
+    @log_entry = current_user.log_entries.find(params[:id])
+    @log_entry.complete!
   end
 end
 

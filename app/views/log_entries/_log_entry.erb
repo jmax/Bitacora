@@ -7,6 +7,9 @@
       <%= log_entry.description %>
     </div>
     <div class="four columns">
+      <%= link_to 'Complete', [:complete, log_entry], :method => :put,
+            :confirm => "Are you sure?", :remote => true %>
+      <span class="divider"> | </span>
        <%= link_to 'Remove', log_entry, :method => :delete,
              :confirm => "Are you sure?", :remote => true %>
     </div>
