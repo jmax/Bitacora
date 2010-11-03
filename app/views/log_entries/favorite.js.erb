@@ -1,2 +1,1 @@
-$("#item-<%= @log_entry.id %>").addClass('highlight');
-
+$("#item-<%= @log_entry.id %>").replaceWith("<%= escape_javascript(render(:partial => 'log_entry', :object => @log_entry)) %>");

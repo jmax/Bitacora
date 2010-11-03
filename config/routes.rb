@@ -5,6 +5,7 @@ Bitacora::Application.routes.draw do
     member do
       put :complete
       put :favorite
+      put :clean_favorite
     end
   end
 

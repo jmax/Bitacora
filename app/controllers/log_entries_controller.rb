@@ -22,5 +22,10 @@ class LogEntriesController < ApplicationController
     @log_entry = current_user.log_entries.find(params[:id])
     @log_entry.favorite!
   end
+  
+  def clean_favorite
+    @log_entry = current_user.log_entries.find(params[:id])
+    @log_entry.clean_favorite!
+  end
 end
 

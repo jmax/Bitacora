@@ -16,6 +16,11 @@ class LogEntry < ActiveRecord::Base
     self.starred = true
     save!
   end
+  
+  def clean_favorite!
+    self.starred = false
+    save! 
+  end
 
 end
 
