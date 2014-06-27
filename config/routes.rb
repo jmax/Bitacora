@@ -4,6 +4,8 @@ Bitacora::Application.routes.draw do
   resources :log_entries do
     member do
       put :complete
+      put :favorite
+      put :clean_favorite
     end
   end
 

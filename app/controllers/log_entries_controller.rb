@@ -4,7 +4,7 @@ class LogEntriesController < ApplicationController
   def create
     @log_entry = current_user.log_entries.build(params[:log_entry])
     if @success = @log_entry.save
-      @log_entries = current_user.log_entries.most_recent.pending
+      @log_entries = current_user.log_entries.most_recent.pending.common
     end
   end
 
@@ -16,6 +16,16 @@ class LogEntriesController < ApplicationController
   def complete
     @log_entry = current_user.log_entries.find(params[:id])
     @log_entry.complete!
+  end
+
+  def favorite
+    @log_entry = current_user.log_entries.find(params[:id])
+    @log_entry.favorite!
+  end
+  
+  def clean_favorite
+    @log_entry = current_user.log_entries.find(params[:id])
+    @log_entry.clean_favorite!
   end
 end
 
